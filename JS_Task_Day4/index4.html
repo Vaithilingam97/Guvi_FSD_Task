@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+    <script src="jsday4.js"></script>    
+    <title>JS Day 4 - Activities</title>
+  </head>
+  <body>
+
+    <h1><u>JS Day 4 Activities</u></h1>
+    <h3>Question 1 : How to Compare two JSON have the same properties without order?</h3>
+        <ul>
+            a. let obj1 = {name: "Person 1",age : 5},</br>
+            b. let obj2 = {age : 5,name: "Person 1"},
+        </ul>
+
+    <h3>Answer 1 :</h3>
+
+    <p> 
+        &emsp; &emsp; 
+        <b><u>Method 1: Using Javascript :</u></b>
+    </p>
+
+    <center>
+    <p style="border: black; border-width:2px; border-style:solid;
+    padding-left: 5px; height: 50px;width: 400px; text-align: center;color:blue;">
+    <br>JSON.stringify(obj1) === JSON.stringify(obj2); // false
+    </p>
+    </center>
+
+    <p>  
+        &emsp; &emsp;
+            For JSON.stringify(), the order matters.So if the key-value pair are ordered differently in the two objects 
+            but are the same, it will return false.
+    </p>
+    <br></br>
+
+    <p>
+        &emsp; &emsp;
+        <b><u>Method 2: Using Lodash :</u></b>
+    </p>
+
+    <center>
+    <p style="border: black; border-width:2px; border-style:solid;
+    padding-left: 5px; height: 50px;width: 400px; text-align: center;color:blue;">
+    <br>_.isEqual(obj1,obj2); // true</p>
+    </center>
+    
+    <p> 
+        &emsp; &emsp;
+            Properties order doesn't matter in Lodash "isEqual", 
+            it will return true as along as the key-value pair exists.
+    </p>
+
+    <br></br>
+    <a href="https://www.samanthaming.com/tidbits/33-how-to-compare-2-objects/">Click Here to know more about JSON Comparision</a>
+
+    
+
+
+
+
+ 
+
+  </body>
+</html>
