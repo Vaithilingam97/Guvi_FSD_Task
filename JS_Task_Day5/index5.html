@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "jsday5_AnonymousFunction.js"></script>
+    <script src = "jsday5_IIFE_Function.js"></script>
+    <script src = "jsday5_ArrowFunction.js"></script>
+    <title>JS Day 4 - Anonymous Function</title>
+</head>
+<body>
+    <h1 style="text-align: center;" ><u>Types of Functions</u></h1>
+    <p>There are 4 types of functions in Javascript.They are</p>
+    <ul>
+        <li>1. Pure Function</li>
+        <li>2. Anonymous Function</li>
+        <li>3. IIFE Function</li>
+        <li>4. Arrow Function</li>     
+    </ul>
+    <h2><u>1. Pure Function</u></h2>
+    <p>A pure function is a function that always returns 
+       the same result given the same inputs, and does not
+       modify any external state. In other words, it does 
+       not have any side effects.
+    </p>   
+       <div style="display: flex; justify-content: center;">
+       <p style="border: blue; border-width:2px; border-style:solid;
+       padding-left: 5px; height: 80px;width: 400px;color:black;">
+       <b><u>Syntax:</u></b><br/>
+        function (x, y) {<br/>
+        return x + y;<br/>
+        }<br/>
+        </div>
+      
+    <h2><u>2. Anonymous Function</u></h2>
+    <p>
+       A function without a name is called Anonymous Function.
+       To call this function it need to be stored as a Variable.
+       There are always invoked using variable name.
+    </p>  
+        <div style="display: flex; justify-content: center;">
+        <p style="border: blue; border-width:2px; border-style:solid;
+        padding-left: 5px; height: 80px;width: 400px;color:black;">
+        <b><u>Syntax:</u></b> <br/>
+        let add = function(a, b) {  <br/>
+        return a + b;   <br/>
+        }   <br/>
+        </div>  
+
+    <h2><u>3. IIFE Function</u></h2>
+    
+    <p> IIFE stands for Immediately Invoked Function Expression.
+        It is a common design pattern in JavaScript that involves wrapping 
+        an anonymous function in parentheses and immediately invoking it.</p>
+        <div style="display: flex; justify-content: center;">
+        <p style="border: blue; border-width:2px; border-style:solid;
+        padding-left: 5px; height: 80px;width: 400px;color:black;">
+        <b><u>Syntax:</u></b> <br/>
+        (function() {   <br/>
+        // code to be executed  <br/>
+        })(); <br/>
+        </div>  
+
+    <h2><u>4. Arrow Function</u></h2>
+    <p>
+        Arrow functions are a feature in ES6 that allow for a 
+        more concise syntax for writing functions. They have a 
+        few differences compared to traditional function declarations, including:
+        <li>Arrow functions are always anonymous.</li>
+        <li>Arrow functions do not have their own "this" keyword, and instead inherit the "this" value from their enclosing context.</li>
+        <li>Arrow functions cannot be used as constructors and do not have a "prototype" property.</li>
+    </p>
+        <div style="display: flex; justify-content: center;">
+        <p style="border: blue; border-width:2px; border-style:solid;
+        padding-left: 5px; height: 165px;width: 400px;color:black;">
+        <b><u>Syntax:</u></b> <br/>
+
+        const add = (a, b) => { <br/>
+        return a + b;   <br/>
+        }   <br/>
+        <br/>
+        <i>If the function only has one expression, the curly braces and return keyword can be omitted.</i>    
+        <br/>
+        <br/>
+        const add = (a, b) => a + b;
+        </div>
+    </p>
+
+</body>
+</html>
